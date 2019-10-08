@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+<h1 class="pageTitle">Add New Dishes</h1>
+
+<div class="container">
+
+
+<form action="/dishes" method="post">
+
+    <input class="form-control" type="text" name="dishName" placeholder="Name" id="dishName">
+
+<textarea class="form-control" name="dishDescription" rows="4" cols="80" placeholder="Description"></textarea>
+
+<button type="submit" name="newDish">Add Dish</button>
+
+</form>
+</div>
+<%- include('partials/footer'); -%>

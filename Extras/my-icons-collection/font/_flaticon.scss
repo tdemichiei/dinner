@@ -1,0 +1,100 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 26/09/2019 02:00
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-love-and-romance:before { content: "\f100"; }
+.flaticon-food:before { content: "\f101"; }
+.flaticon-food-tray-2:before { content: "\f102"; }
+.flaticon-chef:before { content: "\f103"; }
+.flaticon-cooking:before { content: "\f104"; }
+.flaticon-pan:before { content: "\f105"; }
+.flaticon-food-and-restaurant:before { content: "\f106"; }
+.flaticon-bread:before { content: "\f107"; }
+.flaticon-meal:before { content: "\f108"; }
+.flaticon-menu-1:before { content: "\f109"; }
+.flaticon-menu-2:before { content: "\f10a"; }
+.flaticon-jajangmyeon:before { content: "\f10b"; }
+.flaticon-jajangmyeon-1:before { content: "\f10c"; }
+.flaticon-meal-1:before { content: "\f10d"; }
+.flaticon-recipe-book:before { content: "\f10e"; }
+.flaticon-shopping-list:before { content: "\f10f"; }
+.flaticon-recipe-book-1:before { content: "\f110"; }
+.flaticon-book:before { content: "\f111"; }
+.flaticon-recipe-book-2:before { content: "\f112"; }
+.flaticon-whisk:before { content: "\f113"; }
+.flaticon-recipes:before { content: "\f114"; }
+.flaticon-recipe-book-3:before { content: "\f115"; }
+.flaticon-recipe-book-4:before { content: "\f116"; }
+.flaticon-recipes-book-with-spaghetti-plate-on-the-cover:before { content: "\f117"; }
+.flaticon-spaghetti:before { content: "\f118"; }
+.flaticon-spaghetti-1:before { content: "\f119"; }
+.flaticon-spaghetti-2:before { content: "\f11a"; }
+.flaticon-spaghetti-3:before { content: "\f11b"; }
+.flaticon-bowl-of-hot-soup-on-a-plate:before { content: "\f11c"; }
+.flaticon-dish-of-spaghetti:before { content: "\f11d"; }
+    
+    $font-Flaticon-love-and-romance: "\f100";
+    $font-Flaticon-food: "\f101";
+    $font-Flaticon-food-tray-2: "\f102";
+    $font-Flaticon-chef: "\f103";
+    $font-Flaticon-cooking: "\f104";
+    $font-Flaticon-pan: "\f105";
+    $font-Flaticon-food-and-restaurant: "\f106";
+    $font-Flaticon-bread: "\f107";
+    $font-Flaticon-meal: "\f108";
+    $font-Flaticon-menu-1: "\f109";
+    $font-Flaticon-menu-2: "\f10a";
+    $font-Flaticon-jajangmyeon: "\f10b";
+    $font-Flaticon-jajangmyeon-1: "\f10c";
+    $font-Flaticon-meal-1: "\f10d";
+    $font-Flaticon-recipe-book: "\f10e";
+    $font-Flaticon-shopping-list: "\f10f";
+    $font-Flaticon-recipe-book-1: "\f110";
+    $font-Flaticon-book: "\f111";
+    $font-Flaticon-recipe-book-2: "\f112";
+    $font-Flaticon-whisk: "\f113";
+    $font-Flaticon-recipes: "\f114";
+    $font-Flaticon-recipe-book-3: "\f115";
+    $font-Flaticon-recipe-book-4: "\f116";
+    $font-Flaticon-recipes-book-with-spaghetti-plate-on-the-cover: "\f117";
+    $font-Flaticon-spaghetti: "\f118";
+    $font-Flaticon-spaghetti-1: "\f119";
+    $font-Flaticon-spaghetti-2: "\f11a";
+    $font-Flaticon-spaghetti-3: "\f11b";
+    $font-Flaticon-bowl-of-hot-soup-on-a-plate: "\f11c";
+    $font-Flaticon-dish-of-spaghetti: "\f11d";

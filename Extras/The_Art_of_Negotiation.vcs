@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+PRODID:-//MWEJobs//VOS//EN
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20191016T140000Z
+DTEND:20191016T170000Z
+DTSTAMP:20191008T145606Z
+LOCATION;ENCODING=QUOTED-PRINTABLE:UpCounty Regional Service Center, 12900 Middlebrook Road, Germantown, MD 20874
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:Participants will learn negotiation tips and tricks in this workshop which is designed to build confidence by providing optional responses to many scenarios.  Whether you are a novice or a pro, this workshop encourages discussion of success stories and lessons learned!
+****Workshop will begin promptly at 10:00 am; please arrive early. **** 
+
+SUMMARY;ENCODING=QUOTED-PRINTABLE:The Art of Negotiation
+PRIORITY:3
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY;ENCODING=QUOTED-PRINTABLE:The Art of Negotiation
+UID:29e55399-0d3f-482f-a831-7b994a6761bd
+CLASS:PUBLIC
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+<%- include('partials/header'); -%>
+<h1 class="pageTitle">All Meals</h1>
+
+
+<div class="container">
+  <!-- This goes through each Dish in the collection and prints the dish, description and score if it has one-->
+
+
+  <div class="row">
+
+    <% newMeal.forEach(function(meal){ %>
+
+    <div class="col-md-4">
+
+      <div class="card mb-4">
+        <div class="card-header">
+          <%= meal.name %>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><%= meal.dishSet %></li>
+
+            <li class="list-group-item"><%= meal.dateEaten %></li>
+
+<!-- else add score to this dish -->
+
+        </ul>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+<%  })  %>
+</div>
+<%- include('partials/footer'); -%>
