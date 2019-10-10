@@ -56,7 +56,7 @@ const scoreSchema = new mongoose.Schema({
 
 const Score = mongoose.model("Score", scoreSchema);
 
-//Dish
+//Dish schema
 const dishSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -65,15 +65,17 @@ const dishSchema = new mongoose.Schema({
   description: String,
 })
 
+//dish model
 const Dish = mongoose.model("Dish", dishSchema);
 
-//meal
+//meal schema
 const mealSchema = new mongoose.Schema({
   name: String,
   dishSet: [dishSchema],
   eatenDate: Date
 })
 
+//meal Model
 const Meal = mongoose.model("Meal", mealSchema);
 
 //routes
@@ -151,7 +153,8 @@ app.post("/meals", function(req, res){
   // console.log("Dishesi " + dishes[i]);
   // console.log("Dishesi " + typeof dishes[i]);
   // array.push(dishes[i]);
-  for(let i = 0; i<dishes.length; i++) {
+  for(let i = 0; i<=dishes.length; i++) {
+
     Dish.findById(dishes[i], function(err, dish){
       if(err){
         console.log(err);
@@ -160,20 +163,22 @@ app.post("/meals", function(req, res){
         array.push(dish);
         console.log("array Late: " + array);
       }
+      if(i==dishes.length){
+        const newMeal = new Meal({
+          name: meal,
+          dishSet: array,
+          dateEaten: date
+        })
+          newMeal.save();
+          console.log("saved meal: " + newMeal);
+      }
     })
-  }
-
-  const newMeal = new Meal({
-    name: meal,
-    dishSet: array,
-    dateEaten: date
-  })
+  
+  } //for close
 
 
-  newMeal.save();
-console.log("saved meal: " + newMeal);
-  res.redirect("/meals");
-})
+res.redirect("/meals");
+});
 
 //Server listener
 app.listen(process.env.PORT || 3000, function() {
