@@ -152,7 +152,7 @@ app.post("/meals", function(req, res){
   // console.log("Dishesi " + dishes[i]);
   // console.log("Dishesi " + typeof dishes[i]);
   // array.push(dishes[i]);
-  for(let i = 0; i<=dishes.length; i++) {
+  for(let i = 0; i<dishes.length; i++) {
 
     Dish.findById(dishes[i], function(err, dish){
       if(err){
@@ -162,7 +162,7 @@ app.post("/meals", function(req, res){
         array.push(dish);
         console.log("array Late: " + array);
       }
-      if(i==dishes.length){
+      if(i=dishes.length){
         const newMeal = new Meal({
           dishSet: array,
           eatenDate: date

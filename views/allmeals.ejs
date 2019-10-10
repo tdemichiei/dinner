@@ -14,12 +14,14 @@
 
       <div class="card mb-4">
         <div class="card-header">
-          <%= meal.name %>
+          <%= meal.eatenDate %>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><%= meal.dishSet %></li>
+          <% for(i=0; i<meal.dishSet.length; i++){ %>
 
-            <li class="list-group-item"><%= meal.dateEaten %></li>
+          <li class="list-group-item"><%= meal.dishSet[i].name %></li>
+<% } %>
+            
 
 <!-- else add score to this dish -->
 
