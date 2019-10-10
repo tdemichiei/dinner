@@ -70,7 +70,6 @@ const Dish = mongoose.model("Dish", dishSchema);
 
 //meal schema
 const mealSchema = new mongoose.Schema({
-  name: String,
   dishSet: [dishSchema],
   eatenDate: Date
 })
@@ -141,14 +140,14 @@ app.post("/dishes", function(req, res){
 
 //post route to save meals
 app.post("/meals", function(req, res){
-  const meal = req.body.mealName;
+  // const meal = req.body.mealName;
   const dishes = req.body.dishes;
   const date = req.body.dateEaten;
   const array = [];
 
   console.log("length: " + dishes.length);
 
-  console.log("Meal: " + meal + " dishes: " + dishes + " date: " + date);
+  // console.log("Meal: " + meal + " dishes: " + dishes + " date: " + date);
 
   // console.log("Dishesi " + dishes[i]);
   // console.log("Dishesi " + typeof dishes[i]);
@@ -165,15 +164,14 @@ app.post("/meals", function(req, res){
       }
       if(i==dishes.length){
         const newMeal = new Meal({
-          name: meal,
           dishSet: array,
-          dateEaten: date
+          eatenDate: date
         })
           newMeal.save();
           console.log("saved meal: " + newMeal);
       }
     })
-  
+
   } //for close
 
 
